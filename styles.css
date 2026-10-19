@@ -26,6 +26,7 @@ h1 {
   line-height: 1.1rem;
   margin-bottom: 0.25rem;
 }
+
 header p {
   color: var(--text-muted);
   font-size: 1.1rem;
@@ -65,16 +66,34 @@ section {
   margin-bottom: 3rem;
 }
 
+/* Lab 12 · Task 2: list without bullets */
 ul {
-  padding-left: 1.25rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
 }
 
+/* Lab 12 · Task 1: header side by side */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  /* Lab 12 · Task 4: let the header stack when there isn't room */
+  flex-wrap: wrap;
+
+}
+
+
+/* Lab 12 · Task 3: footer */
 footer {
-  margin-top: 4rem;
-  color: var(--text-muted);
-  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

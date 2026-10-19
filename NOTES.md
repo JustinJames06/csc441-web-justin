@@ -1,0 +1,2 @@
+## Week 8, Friday
+I didn't find a problem with the phone version of the site even before I added the flex-wrap. I added the line of code and it didn't do anything and the site was still formatted even when on the iPhone setting.
