@@ -110,3 +110,21 @@ nav a {
 nav a:hover {
   border-bottom-color: var(--text);
 }
+
+/*Lab 13: Task 1: which page I am on*/
+nav a.current {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+/* Lab 13 · Task 4: separate the bar from the header */
+nav {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+nav a:hover { 
+  background: var(--panel); 
+  padding: 0.25rem 0.5rem;
+}
+ 
