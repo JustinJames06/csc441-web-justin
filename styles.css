@@ -88,23 +88,46 @@ header {
 
 }
 
-
+/* Lab 14 · Task 4: footer stacks on narrow screens */
 /* Lab 12 · Task 3: footer */
 footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
   border-top: 1px solid var(--border);
   padding-top: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+
+@media (min-width: 40rem) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 
 /* Class 13: Step 3: the nav bar */
-nav a {
+/* Lab 14 · Task 1: the nav stacks on narrow screens */
+nav ul {
+  list-style: none;
+  padding-left: 0, gap;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
   text-decoration: none;
   font-weight: 700;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
   border-bottom: 2px solid transparent;
+
+}
+
+@media (min-width: 40rem) {
+  nav ul {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
 }
 
 nav a:hover {
@@ -146,6 +169,18 @@ nav a:hover {
 /* Class 14 · Step 3: a row when there's room */
 @media (min-width: 40rem) {
   .cards {
-    flex-direction: row;
+  flex-direction: row;
   }
+}
+
+img { 
+  max-width: 100%; height: auto; 
+}
+
+
+header { 
+  min-height: 40vh; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
 }
