@@ -128,3 +128,24 @@ nav a:hover {
   padding: 0.25rem 0.5rem;
 }
  
+/* Class 14 · Step 2: the cards go in a row */
+/* Class 14 · Step 3: stack by default */
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  flex: 1;
+}
+
+/* Class 14 · Step 3: a row when there's room */
+@media (min-width: 40rem) {
+  .cards {
+    flex-direction: row;
+  }
+}
