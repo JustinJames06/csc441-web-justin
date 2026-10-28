@@ -184,3 +184,11 @@ header {
   flex-direction: column; 
   justify-content: center; 
 }
+
+body.dark {
+  --text: white;
+  --text-muted: silver;
+  --accent: #0d5cbd;
+  --background: black;
+  --border: red;  
+}
