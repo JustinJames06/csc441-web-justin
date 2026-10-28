@@ -23,7 +23,7 @@ body {
 
 h1 {
   font-size: 3rem; /* Class 12: Step 2: my own scale */
-  line-height: 1.1rem;
+  line-height: 1.1;
   margin-bottom: 0.25rem;
 }
 
