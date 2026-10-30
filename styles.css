@@ -183,4 +183,14 @@ header {
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
+  align-items: center;
+  text-align: center;
+}
+
+body.dark {
+  --text: white;
+  --text-muted: silver;
+  --accent: skyblue;
+  --background: black;
+  --border: red;  
 }
