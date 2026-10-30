@@ -12,16 +12,15 @@ if (yearSpan) {
 const themeButton = document.querySelector("#theme-toggle");
 
 if (themeButton) {
-    // Lab 15 · Task 4: use the saved choice on arrival
-    if (localStorage.getItem("theme") === "dark") {
-        document.body.classList.add("dark");
-        themeButton.textContent = "Light";
-    }
+  // Lab 15 · Task 4: use the saved choice on arrival
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    themeButton.textContent = "Light";
+  }
 
   // Lab 15 · Task 3: the button says what it will do
   themeButton.addEventListener("click", function () {
     document.body.classList.toggle("dark");
-
 
     if (document.body.classList.contains("dark")) {
       themeButton.textContent = "Light";
@@ -37,10 +36,27 @@ if (themeButton) {
 const backToTopButton = document.querySelector("#back-to-top");
 
 if (backToTopButton) {
-    backToTopButton.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+  backToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
+  });
+}
+
+// Class 16: step 4: handle the submit
+const contactForm = document.querySelector("#contact-form");
+
+// Class 16: step 4: handle the submit
+if (contactForm) {
+  const formStatus = document.querySelector("#form-status");
+
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.querySelector("#name").value;
+
+    formStatus.textContent = "Thanks " + name + "! Your message was sent.";
+    contactForm.reset();
+  });
 }
