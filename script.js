@@ -51,12 +51,39 @@ const contactForm = document.querySelector("#contact-form");
 if (contactForm) {
   const formStatus = document.querySelector("#form-status");
 
+  // Lab 16 · Task 1: my own check before accepting it
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const name = document.querySelector("#name").value;
+    const name = document.querySelector("#name").value.trim();
+    const message = document.querySelector("#message").value.trim();
 
+    if (message.length < 10) {
+      formStatus.textContent =
+        "Your message must be at least 10 characters long.";
+      formStatus.classList.add("error");
+      return;
+    }
+
+    formStatus.classList.remove("error");
     formStatus.textContent = "Thanks " + name + "! Your message was sent.";
     contactForm.reset();
+    counter.textContent = "0/10";
+  });
+
+  const counter = document.querySelector("#message-count");
+  const messageBox = document.querySelector("#message");
+
+  messageBox.addEventListener("input", function () {
+    counter.textContent = messageBox.value.length + "/10";
+  });
+  
+
+  // Lab 16 · Task 2: clear the error once they start fixing it
+  contactForm.addEventListener("input", function () {
+    if (formStatus.classList.contains("error")) {
+      formStatus.textContent = "";
+      formStatus.classList.remove("error");
+    }
   });
 }

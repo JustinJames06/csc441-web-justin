@@ -20,3 +20,10 @@ I didn't find a problem with the phone version of the site even before I added t
 3. It changed in so few lines because we just changed the variables for the theme to the opposite colors. If we didn't have te variables we would have had to change each color for each section of the css file manually.
 4. I had an error in my console when I added the button to my projects file because I accidently connected to the script twice in the same file. After I found the error, I deleted it and it worked like normal.
 5. The button still looks kind of ugly and I would love to know how to change the look of it.
+
+## Week 10, Friday
+1. event.PreventDefault() stops the page from reloading when the send button is pressed. Without it your JavaScript would be lost once the send button is pressed.
+2. We got this error because null doesn't have an event listener. We fixed this by putting everything in an if statement.
+3. I chose the live character count because I feel that if we have a rule about what you can type in the box, it is important for the user to know about it.
+4. I could not find anything weong from the list in the lab.
+5. The site isn't linked to an actual email or anywhere to send the message. I think that we have to link an email for messages to send to.
