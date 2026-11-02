@@ -12,16 +12,15 @@ if (yearSpan) {
 const themeButton = document.querySelector("#theme-toggle");
 
 if (themeButton) {
-    // Lab 15 · Task 4: use the saved choice on arrival
-    if (localStorage.getItem("theme") === "dark") {
-        document.body.classList.add("dark");
-        themeButton.textContent = "Light";
-    }
+  // Lab 15 · Task 4: use the saved choice on arrival
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    themeButton.textContent = "Light";
+  }
 
   // Lab 15 · Task 3: the button says what it will do
   themeButton.addEventListener("click", function () {
     document.body.classList.toggle("dark");
-
 
     if (document.body.classList.contains("dark")) {
       themeButton.textContent = "Light";
@@ -37,10 +36,54 @@ if (themeButton) {
 const backToTopButton = document.querySelector("#back-to-top");
 
 if (backToTopButton) {
-    backToTopButton.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+  backToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
+  });
+}
+
+// Class 16: step 4: handle the submit
+const contactForm = document.querySelector("#contact-form");
+
+// Class 16: step 4: handle the submit
+if (contactForm) {
+  const formStatus = document.querySelector("#form-status");
+
+  // Lab 16 · Task 1: my own check before accepting it
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.querySelector("#name").value.trim();
+    const message = document.querySelector("#message").value.trim();
+
+    if (message.length < 10) {
+      formStatus.textContent =
+        "Your message must be at least 10 characters long.";
+      formStatus.classList.add("error");
+      return;
+    }
+
+    formStatus.classList.remove("error");
+    formStatus.textContent = "Thanks " + name + "! Your message was sent.";
+    contactForm.reset();
+    counter.textContent = "0/10";
+  });
+
+  const counter = document.querySelector("#message-count");
+  const messageBox = document.querySelector("#message");
+
+  messageBox.addEventListener("input", function () {
+    counter.textContent = messageBox.value.length + "/10";
+  });
+  
+
+  // Lab 16 · Task 2: clear the error once they start fixing it
+  contactForm.addEventListener("input", function () {
+    if (formStatus.classList.contains("error")) {
+      formStatus.textContent = "";
+      formStatus.classList.remove("error");
+    }
+  });
 }
