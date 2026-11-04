@@ -30,3 +30,8 @@ I didn't find a problem with the phone version of the site even before I added t
 
 ## Week 11, Wednesday
 Live Site: https://justinjames28.netlify.app
+
+1. GitHub stores your files in a repository for you to keep track of your project and netlify reads those github files and releases them.
+2. Netlify is displaying our release branch so whatever we push into development won't show up until we merge it with release.
+3. It makes a secure connection for the site.
+4. No there's nothing that couldn't be found on my social media.
