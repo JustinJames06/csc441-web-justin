@@ -26,4 +26,7 @@ I didn't find a problem with the phone version of the site even before I added t
 2. We got this error because null doesn't have an event listener. We fixed this by putting everything in an if statement.
 3. I chose the live character count because I feel that if we have a rule about what you can type in the box, it is important for the user to know about it.
 4. I could not find anything weong from the list in the lab.
-5. The site isn't linked to an actual email or anywhere to send the message. I think that we have to link an email for messages to send to.
+5. The site isn't linked to an actual email or anywhere to send the message. I think that we have to link an email for messages to send to. 
+
+## Week 11, Wednesday
+Live Site: https://justinjames28.netlify.app
