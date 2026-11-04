@@ -173,7 +173,7 @@ nav a:hover {
 }
 
 /* Class 14 · Step 3: a row when there's room */
-@media (min-width: 40rem) {
+@media (min-width: 50rem) {
   .cards {
   flex-direction: row;
   }
