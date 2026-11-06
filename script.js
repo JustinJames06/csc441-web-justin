@@ -67,7 +67,7 @@ if (contactForm) {
 
     formStatus.classList.remove("error");
     formStatus.textContent = "Thanks " + name + "! Your message was sent.";
-    contactForm.reset();
+    contactForm.submit();
     counter.textContent = "0/10";
   });
 
