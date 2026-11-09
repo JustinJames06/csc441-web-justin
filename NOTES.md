@@ -35,3 +35,11 @@ Live Site: https://justinjames28.netlify.app
 2. Netlify is displaying our release branch so whatever we push into development won't show up until we merge it with release.
 3. It makes a secure connection for the site.
 4. No there's nothing that couldn't be found on my social media.
+
+## Week 11, Friday
+1. The form is hidden so that no real human fills it out, while spam bots will still detect the form and fill it out. Of the form contains anything, we know its a spam message which is much less annoying for the user than using a captcha.
+2. A deploy preview is a tmeporary link for your site for you to test changes that you made before fully releasing that version of the site.
+3. None of the things listed were broken on my phone view.
+4. I make the change on a branch, which is then pulled into my github and then merged with the development branch. Then the development branch is merged into the release branch, which netlify uses to update my site.
+5. Netlify provides the default netlify.app url for every site and I also provided it my own custom domain to point to the same website.
+6. It would be cool once the android app is published for users to be able to click on a link to open the projects in the projects tab.
