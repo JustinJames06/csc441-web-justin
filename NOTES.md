@@ -43,3 +43,12 @@ Live Site: https://justinjames28.netlify.app
 4. I make the change on a branch, which is then pulled into my github and then merged with the development branch. Then the development branch is merged into the release branch, which netlify uses to update my site.
 5. Netlify provides the default netlify.app url for every site and I also provided it my own custom domain to point to the same website.
 6. It would be cool once the android app is published for users to be able to click on a link to open the projects in the projects tab.
+
+
+
+## Week 12, Wednesday, Lab 19
+1. A databse table holds information in rows and columns.
+2. The table is where the actual data is held and the API endpoint is how applications access the data, but not the actual project.
+3. GET retrieves data from a server
+4. The secret key leads to more sensitive informaiton so we hide it from the public and only give out the public key.
+5. select =* returned every comlumn and select = title,category returned just the title and category columns.
