@@ -1,0 +1,42 @@
+[
+  {
+    "id": 4,
+    "title": "Sports",
+    "description": "I enjoy watching sports.",
+    "category": "Entertainment",
+    "image_url": null,
+    "created_at": "2026-11-13T15:03:04.702619+00:00"
+  },
+  {
+    "id": 5,
+    "title": "History",
+    "description": "I enjoy learning about history.",
+    "category": "Education",
+    "image_url": null,
+    "created_at": "2026-11-13T15:03:04.702619+00:00"
+  },
+  {
+    "id": 6,
+    "title": "Video Games",
+    "description": "I like playing video games.",
+    "category": "Entertainment",
+    "image_url": null,
+    "created_at": "2026-11-13T15:03:04.702619+00:00"
+  },
+  {
+    "id": 7,
+    "title": "New York Yankees",
+    "description": "A professional MLB team.",
+    "category": "Sports",
+    "image_url": null,
+    "created_at": "2026-11-13T15:20:51.620924+00:00"
+  },
+  {
+    "id": 9,
+    "title": "New York Knicks",
+    "description": "A professional NBA team.",
+    "category": "Sports\n",
+    "image_url": "https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=1000&q=80",
+    "created_at": "2026-11-13T15:21:52.287793+00:00"
+  }
+]
