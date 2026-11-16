@@ -12,6 +12,7 @@
   --border: #47b6e9;
   --error: crimson;
 }
+
 body {
   font-family:
     "Figtree",
@@ -28,7 +29,8 @@ body {
 }
 
 h1 {
-  font-size: 3rem; /* Class 12: Step 2: my own scale */
+  font-size: 3rem;
+  /* Class 12: Step 2: my own scale */
   line-height: 1.1;
   margin-bottom: 0.25rem;
 }
@@ -38,6 +40,7 @@ header p {
   font-size: 1.1rem;
   margin-top: 1;
 }
+
 h2 {
   font-size: 1.75rem;
   margin-top: 2.5rem;
@@ -46,17 +49,18 @@ h2 {
   margin-bottom: 1rem;
 }
 
-p{
+p {
   font-size: 1.05rem;
   margin-bottom: 1rem;
 }
 
-/* Lab 11 · Task 4: links */  
+/* Lab 11 · Task 4: links */
 a {
   color: var(--accent);
-  text-decoration: none; 
+  text-decoration: none;
   border-bottom: 1px solid transparent;
 }
+
 a:hover {
   border-bottom-color: var(--accent);
 }
@@ -145,6 +149,7 @@ nav a.current {
   border-bottom-color: var(--accent);
   color: var(--accent);
 }
+
 /* Lab 13 · Task 4: separate the bar from the header */
 nav {
   padding-bottom: 1rem;
@@ -152,11 +157,11 @@ nav {
   margin-bottom: 2rem;
 }
 
-nav a:hover { 
-  background: var(--panel); 
+nav a:hover {
+  background: var(--panel);
   padding: 0.25rem 0.5rem;
 }
- 
+
 /* Class 14 · Step 2: the cards go in a row */
 /* Class 14 · Step 3: stack by default */
 .cards {
@@ -175,20 +180,21 @@ nav a:hover {
 /* Class 14 · Step 3: a row when there's room */
 @media (min-width: 50rem) {
   .cards {
-  flex-direction: row;
+    flex-direction: row;
   }
 }
 
-img { 
-  max-width: 100%; height: auto; 
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 
-header { 
-  min-height: 40vh; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
+header {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -198,18 +204,19 @@ body.dark {
   --text-muted: silver;
   --accent: rgb(247, 248, 249);
   --background: rgba(32, 31, 31, 0.903);
-  --border: rgb(84, 96, 188); 
-  --error: rgb(196, 85, 41); 
+  --border: rgb(84, 96, 188);
+  --error: rgb(196, 85, 41);
 }
 
 /* Class 16: Step 3: the form */
-form label{
+form label {
   display: block;
   margin-bottom: 0.25rem;
   font-weight: 700;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   font: inherit;
   width: 100%;
   padding: 0.5rem;
@@ -220,7 +227,8 @@ form input, form textarea {
   color: var(--text);
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
   outline: 2px solid var(--accent);
   outline-offset: .5px;
 }
@@ -243,10 +251,80 @@ form button {
 
 /* Lab 16 · Task 1: the error state */
 #form-status.error {
-color: var(--error);
+  color: var(--error);
 }
 
 /* Class 18: Step 2: the honeypot, hidden from people */
 .hidden-field {
   display: none;
+}
+
+/* Class 20 · Step 5: cards use your existing theme variables */
+.interests-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 1rem;
+}
+
+.showcase-card {
+  padding: 1rem;
+  border: 1px solid var(--border, lightgray);
+  background: var(--background, white);
+  color: var(--text, black);
+  border-radius: 12px;
+}
+
+.showcase-card h3 {
+  margin: 0 0 .4rem;
+}
+
+.showcase-card small {
+  color: var(--accent, royalblue);
+  font-weight: 700;
+}
+
+.showcase-card p {
+  line-height: 1.5;
+}
+
+#showcase-status {
+  color: var(--text-muted, dimgray);
+}
+
+
+/* Lab 20 · Task 3: pictures and card spacing */
+.showcase-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.showcase-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.showcase-body {
+  padding: 1rem;
+}
+
+#showcase-refresh {
+  font: inherit;
+  padding: .5rem .9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid var(--border, lightgray);
+  color: var(--text, black);
+  background: var(--background, white);
+}
+
+#showcase-refresh:focus-visible {
+  outline: 2px solid var(--accent, royalblue);
 }
