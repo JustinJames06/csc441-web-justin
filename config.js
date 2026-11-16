@@ -1,4 +1,4 @@
-const SHOWCASE_URL = {
+const SHOWCASE_CONFIG = {
     url: "https://vfujgflhznyncvnbhwvr.supabase.co",
     key: "sb_publishable_D51G_bq6ULh3poi2TzBgug_tTfKO8Te"
 }

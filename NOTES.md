@@ -52,3 +52,11 @@ Live Site: https://justinjames28.netlify.app
 3. GET retrieves data from a server
 4. The secret key leads to more sensitive informaiton so we hide it from the public and only give out the public key.
 5. select =* returned every comlumn and select = title,category returned just the title and category columns.
+
+
+## Week 12 Friday, Lab 20:
+1. fetch() sends an http request and response.json sends the response back converted into javascript.
+2. We use textContent becasue the data came from outside our html page.
+3. An error message is displayed on the sight.
+4. The page does not crash, but the cards don't load and an error is displayed.
+5. When we edit the table in supabase, the site changes without changing anything.
